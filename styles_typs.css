@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body {background-color: #C9C9C9; padding: 0;margin: 0;}
+
+header {display: flex; justify-content: center; align-items: center;background-color: #A3A3A3;}
+
+#logo {width: 237px; height: 200px;}
+
+h1.header {text-transform: uppercase;}
+#J	{margin-left: 30px;}
+#L	{margin-right: 30px;}
+
+li {list-style: none;display: inline; margin-right: 100px;transition: 0.1s;}
+li:hover {background-color: #868686; padding:8px; border-radius: 10px; margin-right: 84px;transition: 0.3s;}
+a {text-decoration: none;}
+a.mail {color: white; text-align: center;}
+a.li {color: #C0F6FF}
+nav {background-color: #565656; display: flex;justify-content: center;}
+.disable {pointer-events: none;text-decoration: line-through;color: #2B3241;}
+.centre {text-align: center;}
+
+footer {margin: 0px; background: #666; color: white; }
+.content { min-height: calc(100vh - 70px);}
+footer {height: 50px;}
+
+h1 {text-align: center; margin-bottom: 50px}
+h3 {margin-right: 20px}
+#iframe {display: flex; justify-content: center; align-items: center;}
