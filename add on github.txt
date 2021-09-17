@@ -1,4 +1,6 @@
-git bash
+app : git bash 
+
+
 
 cd .......
 
@@ -7,6 +9,7 @@ git add .
 git commit -m "..."
 
 git push
+
 
 
 https://youtu.be/EGiomjuOwM8?t=774
