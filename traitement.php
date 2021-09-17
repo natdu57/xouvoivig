@@ -60,7 +60,7 @@
 			//$sth->bindParam('NOW()',$date_time_publication);
 			$sth->execute();
 			mail($email, $objet, $contenu, $entetes); 
-			header('Location: thank.html');
+			header('Location: notification_envoie.php');
 			exit();
 			
 		}	else {

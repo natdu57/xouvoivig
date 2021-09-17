@@ -3,7 +3,7 @@
 	session_start();
 
 
-
+print_r($_POST);
     $cle = rand(100000, 999999);
 	$_SESSION['cle'] = $cle;
 	$titre = $_POST['titre'];

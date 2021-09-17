@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>xouvoivig</title>
+<link href="styles_notification.css" rel="stylesheet">
+<link rel="icon" type="image/jpg" href="icon.jpg">
+</head>
+
+<body>
+<div class="content">
+<header>
+	<h1 class="header" id="L">la securite</h1>
+	<a href="index.html"><img src="logo.jpg" id="logo"></a>
+  <h1 class="header" id="J">faite par vos voisins</h1>
+</header>
+<nav>
+	<ul>
+		<li><a class="li" href="index.html">Accueil</a></li>
+		<li><a class="li" href="tips.html">Tips &amp astuces</a></li>
+		<li><a class="li" href="observation.html">Déposer une observation.</a></li>
+		<li><a class="li" href="récent.php">récent</a></li>
+		<li class="disable"><a class="disable">notification</a></li>
+	</ul>
+</nav>
+<div id="annonce">
+	<h2>Inscriver vous ci-dessous pour recevoir des mail pour etre prevenu si quelque chose de suspect se passe</h2>
+</div>
+<main>
+	<form method="POST" action="verification_notification.php">
+		<label for="nom_notification" class="marge">Nom :</label>
+		<input type="text" class="marge" name="nom_notification" id="nom_notification" autocomplete="on" placeholder="ex : KELLER" />
+		<label for="prenom_notification">Prenom :</label>
+		<input type="text" name="prenom_notification" class="marge" id="prenom_notification" autocomplete="on" placeholder="ex : Nathan" /><br>
+		<div id="vmail">
+		<label for="email_notification">votre email :</label>
+		<input type="email" name="email_notification" class="marge" id="email_notification" autocomplete="on" placeholder="ex : example@example.example" /><br/>
+		<br/><p><center><input type="submit" class="soumettre" value="etre notifier" /></center></p>
+	</form>
+</main>
+<p id="fac">* = facultatif</p>
+</div>
+<footer>
+	<a href="mailto:kellernathan@gmail.com" class="mail"><p>mon adresse : kellernathan57@gmail.com</p></a>
+	<p class="centre">copyright © 2021. Tout droits reservés. Nathan KELLER. </p>
+</footer>
+</body>
+</html>
