@@ -44,5 +44,28 @@
 	<a href="mailto:kellernathan@gmail.com" class="mail"><p>mon adresse : kellernathan57@gmail.com</p></a>
 	<p class="centre">copyright © 2021. Tout droits reservés. Nathan KELLER. </p>
 </footer>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD8cGKHhGmI4s7BgduyP0gIiMIacXiHU4U",
+    authDomain: "xouvoivig-7f14d.firebaseapp.com",
+    projectId: "xouvoivig-7f14d",
+    storageBucket: "xouvoivig-7f14d.appspot.com",
+    messagingSenderId: "891387499170",
+    appId: "1:891387499170:web:b2be94979607d620503dfb",
+    measurementId: "G-MXHQZQ5LM8"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>

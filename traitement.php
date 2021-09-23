@@ -61,6 +61,7 @@
 			$sth->execute();
 			mail($email, $objet, $contenu, $entetes); 
 			header('Location: notification_envoie.php');
+			//header('Location: thank.html');
 			exit();
 			
 		}	else {
