@@ -53,15 +53,9 @@
 			$sth->bindParam(':email_notification',$email_notification);
 			$sth->execute();
 			mail($email_notification, $objet, $contenu, $entetes); 
-			header('Location: thank_notification.html');
+			header('Location: notification_js.html');
 			exit();
-			
-		}	else {
-			
-			header('Location: error.html');
-			exit();
-			
-		}
+			}
         
 	  
 	  

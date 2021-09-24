@@ -2,23 +2,27 @@
 
 	session_start();
 
-
-print_r($_POST);
     $cle = rand(100000, 999999);
-	$_SESSION['cle'] = $cle;
 	$titre = $_POST['titre'];
-	$_SESSION['titre'] = $titre;
 	$email = $_POST['email'];
-	$_SESSION['email'] = $email;
 	$nom = $_POST['nom'];
-	$_SESSION['nom'] = $nom;
 	$prenom = $_POST['prenom'];
-	$_SESSION['prenom'] = $prenom;
     $sujet = $_POST["sujet"];
-	$_SESSION['sujet'] = $sujet;
     $ob = $_POST["ob"];
-	$_SESSION['ob'] = $ob;
+
+
+    if (!empty($titre) && !empty($email) && !empty($nom) && !empty($prenom) && !empty($sujet) && !empty($ob)) {
+    	
     
+    
+	$_SESSION['cle'] = $cle;
+	$_SESSION['titre'] = $titre;
+	$_SESSION['email'] = $email;
+	$_SESSION['nom'] = $nom;
+	$_SESSION['prenom'] = $prenom;
+	$_SESSION['sujet'] = $sujet;
+	$_SESSION['ob'] = $ob;
+
 	$objet = 'Confirmation de votre email' ;
 		$contenu = '
 	<html>
@@ -42,5 +46,10 @@ mail($email, $objet, $contenu, $entetes);
 
 header('Location: verification.html');
 exit();
-                                                    
+}
+
+else {
+	header('Location: error.html');
+}
+
 ?>

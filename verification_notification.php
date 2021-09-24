@@ -8,13 +8,17 @@
 	session_start();
 
     $cle_notification = rand(100000, 999999);
-	$_SESSION['cle_notification'] = $cle_notification;
 	$email_notification = $_POST['email_notification'];
-	$_SESSION['email_notification'] = $email_notification;
 	$nom_notification = $_POST['nom_notification'];
-	$_SESSION['nom_notification'] = $nom_notification;
 	$prenom_notification = $_POST['prenom_notification'];
+
+	if (!empty($email_notification) && !empty($nom_notification) && !empty($prenom_notification)) {
+
+	$_SESSION['cle_notification'] = $cle_notification;
+	$_SESSION['email_notification'] = $email_notification;
+	$_SESSION['nom_notification'] = $nom_notification;
 	$_SESSION['prenom_notification'] = $prenom_notification;
+
 	try{
         //On se connecte à la BDD
         $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user_connexion,$pass);
@@ -64,5 +68,9 @@ exit();
 }
 catch(PDOException $e){
     echo 'Impossible de traiter les données. Erreur : '.$e->getMessage();
+}
+}
+else {
+	header('Location: error.html');
 }                                            
 ?>
